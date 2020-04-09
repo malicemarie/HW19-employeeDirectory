@@ -26,7 +26,8 @@ class Results extends Component {
           <table className="table table-striped table-dark">
             <thead>
               <tr>
-                {/* <Col> */} <th scope="col">Name</th>
+                {/* <Col> */} <th scope="col">Image</th>
+                <th scope="col">Name</th>
                 <th scope="col">Phone</th>
                 <th scope="col">Email</th>
                 <th scope="col">DOB</th>

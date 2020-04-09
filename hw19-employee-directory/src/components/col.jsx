@@ -7,10 +7,10 @@ import React from "react";
 function Col(props) {
   const size = props.size
     .split(" ")
-    .map(size => "col-" + size)
+    .map(size => "col" + size)
     .join(" ");
 
-  return <div className={size}>{props.children}</div>;
+  return <th scope="col">{props.children}</th>;
 }
 
 Col.propTypes = {
