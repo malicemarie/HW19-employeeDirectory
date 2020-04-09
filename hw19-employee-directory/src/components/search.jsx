@@ -7,7 +7,7 @@ class Search extends Component {
     return (
       <div>
         <div className="search-bar">
-          <label className="dob-label" for="dob">
+          <label className="dob-label" htmlFor="dob">
             DOB
           </label>
           <input type="date" id="dob" name="dob"></input>

@@ -1,21 +1,36 @@
 import React, { Component } from "react";
 import "../styles/resultsList.css";
+import axios from "axios";
+import Col from "./col";
+import Row from "./row";
+import Search from "./search";
 
 class Results extends Component {
-  state = {};
+  state = {
+    persons: []
+  };
+
+  componentDidMount() {
+    axios.get(`https://jsonplaceholder.typicode.com/users`).then(res => {
+      const persons = res.data;
+      this.setState({ persons });
+      console.log(persons);
+    });
+  }
+
   render() {
     return (
       <div className="container">
         {" "}
         <div className="results-table">
-          <table class="table table-striped table-dark">
+          <table className="table table-striped table-dark">
             <thead>
               <tr>
-                <th scope="col">Image</th>
-                <th scope="col">Name</th>
+                {/* <Col> */} <th scope="col">Name</th>
                 <th scope="col">Phone</th>
                 <th scope="col">Email</th>
                 <th scope="col">DOB</th>
+                {/* </Col> */}
               </tr>
             </thead>
             <tbody>
@@ -29,6 +44,10 @@ class Results extends Component {
             </tbody>
           </table>
         </div>
+        {/* <Row>
+          <Col size="md-8"></Col>
+          <Col size="md-4"></Col>
+        </Row> */}
       </div>
     );
   }
