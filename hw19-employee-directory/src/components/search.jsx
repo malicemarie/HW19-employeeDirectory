@@ -7,7 +7,9 @@ class Search extends Component {
     return (
       <div>
         <div className="search-bar">
-          <label for="dob">DOB</label>
+          <label className="dob-label" for="dob">
+            DOB
+          </label>
           <input type="date" id="dob" name="dob"></input>
           <input type="date" id="enddate" name="enddate"></input>
           <input type="text" placeholder="Search here"></input>

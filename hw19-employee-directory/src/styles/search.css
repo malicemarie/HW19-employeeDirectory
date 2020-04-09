@@ -3,3 +3,8 @@
   align-items: center;
   margin: 20px;
 }
+
+.dob-label {
+  background-color: lightslategray;
+  height: auto;
+}

@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import Header from "./header";
 import Search from "./search";
+import Results from "./resultsList";
 
 class Tracker extends Component {
   state = {};
@@ -8,7 +9,7 @@ class Tracker extends Component {
     return (
       <div>
         <Header /> <Search />
-        <h3>This is going to compile the Page</h3>
+        <Results />
       </div>
     );
   }
