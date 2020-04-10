@@ -6,7 +6,6 @@ import "../styles/resultsList.css";
 // import Search from "./search";
 
 function Results({ persons }) {
-  console.log("from results", persons);
   return (
     <div className="container">
       {" "}

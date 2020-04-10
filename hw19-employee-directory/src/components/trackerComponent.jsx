@@ -10,16 +10,28 @@ class Tracker extends Component {
   componentDidMount() {
     axios.get("https://randomuser.me/api/?results=10").then(({ data }) => {
       const persons = data.results;
-      console.log("before set state", persons);
       this.setState({ persons: persons });
     });
   }
 
+  handleInputChange = event => {
+    // Getting the value and name of the input which triggered the change
+    let value = event.target.value;
+    const name = event.target.name;
+
+    if (name === "password") {
+      value = value.substring(0, 15);
+    }
+    // Updating the input's state
+    this.setState({
+      [name]: value
+    });
+  };
+
   render() {
-    console.log("this.state.persons", this.state.persons);
     return (
       <div>
-        <Header /> <Search />
+        <Header /> <Search handleInputChange={this.handleInputChange} />
         <Results persons={this.state.persons} />
       </div>
     );
