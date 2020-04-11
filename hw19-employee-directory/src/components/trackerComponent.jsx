@@ -8,7 +8,7 @@ class Tracker extends Component {
   state = { persons: [] };
 
   componentDidMount() {
-    axios.get("https://randomuser.me/api/?results=10").then(({ data }) => {
+    axios.get("https://randomuser.me/api/?results=20").then(({ data }) => {
       const persons = data.results;
       this.setState({ persons: persons });
     });

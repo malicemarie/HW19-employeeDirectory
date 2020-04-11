@@ -10,7 +10,7 @@ function Results({ persons }) {
     <div className="container">
       {" "}
       <div className="results-table">
-        <table className="table table-striped table-dark">
+        <table className="table table-striped table-dark table-sortable">
           <thead>
             <tr>
               <th scope="col">Image</th>
