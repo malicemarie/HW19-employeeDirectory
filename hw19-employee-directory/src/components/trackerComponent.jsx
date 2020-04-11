@@ -19,9 +19,9 @@ class Tracker extends Component {
     let value = event.target.value;
     const name = event.target.name;
 
-    if (name === "password") {
-      value = value.substring(0, 15);
-    }
+    console.log("name", name);
+    console.log("value", value);
+
     // Updating the input's state
     this.setState({
       [name]: value

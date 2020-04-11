@@ -1,13 +1,28 @@
 header {
-  height: 150px;
-  background-color: #1d2849;
+  height: 360px;
+  background-image: url("../ronny.jpg");
+  background-size: 50%;
+  background-repeat: no-repeat;
+  background-color: rgb(51, 77, 54);
   display: flex;
   align-items: center;
   justify-content: center;
-  text-align: center;
+  text-align: right;
 }
-
-.header-title {
-  padding-top: 35px;
-  color: oldlace;
+.header-message {
+  padding-top: 70px;
+  padding-right: 30px;
+  color: black;
+}
+.head-title {
+  font-size: 100px;
+  font-family: "Franklin Gothic Medium";
+  color: black;
+  font-weight: bold;
+}
+p {
+  color: gray;
+  font-size: 20px;
+  font-style: italic;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }

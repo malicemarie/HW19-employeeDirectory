@@ -1,10 +1,13 @@
 .search-bar {
-  justify-content: center;
+  display: flex;
   align-items: center;
+  justify-content: center;
+  text-align: center;
   margin: 20px;
 }
-
 .dob-label {
   background-color: lightslategray;
-  height: auto;
+  height: 30px;
+  margin-top: 7px;
+  font-weight: bold;
 }
