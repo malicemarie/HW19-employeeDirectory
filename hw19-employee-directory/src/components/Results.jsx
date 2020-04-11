@@ -5,7 +5,7 @@ import "../styles/resultsList.css";
 // import Row from "./row";
 // import Search from "./search";
 
-function Results({ persons }) {
+function Results({ persons }, { filteredPersons }) {
   return (
     <div className="container">
       {" "}
@@ -24,7 +24,7 @@ function Results({ persons }) {
             {persons.map((person, index) => (
               <tr key={index}>
                 <td>
-                  <img src={person.picture.medium} alt="person-photo" />{" "}
+                  <img src={person.picture.medium} alt="thumb" />{" "}
                 </td>
                 <td>{person.name.first}</td>
                 <td>{person.phone}</td>

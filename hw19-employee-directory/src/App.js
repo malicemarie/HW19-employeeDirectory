@@ -1,5 +1,4 @@
 import React from "react";
-import logo from "./logo.svg";
 import Tracker from "./components/trackerComponent";
 import "./App.css";
 

@@ -15,7 +15,11 @@ function Search({ handleInputChange }) {
           name="dob"
         ></input>
         <input type="date" id="enddate" name="enddate"></input>
-        <input type="text" placeholder="Search here"></input>
+        <input
+          type="text"
+          placeholder="Search here"
+          onChange={handleInputChange}
+        ></input>
       </div>
     </div>
   );
