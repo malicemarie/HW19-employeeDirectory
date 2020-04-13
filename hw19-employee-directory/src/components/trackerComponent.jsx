@@ -7,22 +7,22 @@ import axios from "axios";
 class Tracker extends Component {
   state = {
     persons: [],
-    filteredPersons: []
+    filteredPersons: [],
   };
 
   componentDidMount() {
-    axios.get("https://randomuser.me/api/?results=20").then(({ data }) => {
+    axios.get("https://randomuser.me/api/?results=50").then(({ data }) => {
       const persons = data.results;
       this.setState({
         persons: persons,
-        filteredPersons: persons
+        filteredPersons: persons,
       });
     });
   }
 
-  handleInputChange = event => {
+  handleInputChange = (event) => {
     const searchInput = event.target.value;
-    const filteredPersons = this.state.persons.filter(person => {
+    const filteredPersons = this.state.persons.filter((person) => {
       let name = person.name.first.toLowerCase();
       console.log(typeof name);
       const matchPersons = name.indexOf(searchInput.toLowerCase()) !== -1;
@@ -32,7 +32,7 @@ class Tracker extends Component {
 
     // Updating the input's state
     this.setState({
-      filteredPersons: filteredPersons
+      filteredPersons: filteredPersons,
     });
   };
 
