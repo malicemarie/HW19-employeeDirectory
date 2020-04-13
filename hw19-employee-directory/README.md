@@ -1,3 +1,5 @@
+[Employee Directory](https://young-island-22114.herokuapp.com/)
+
 # HW19-employeeDirectory
 
 In this assignment I was required to create an employee directory where you can search for employees via search bar or by sorting a column in a table. The assignment is a front end based assignment showcasing recently acquired React skills.
